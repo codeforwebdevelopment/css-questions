@@ -24,3 +24,28 @@ It is impossible to do with CSS selector syntax
 E.
 It is possible to do with CSS selector syntax, but none of the choices above are correct.
 
+--------------------------------------------
+#foo {
+width: 100px;
+padding: 10px;
+margin: 5px;
+border: 1px solid black;
+}
+#bar {
+width: 100px;
+padding: 15px;
+margin: 0px;
+border: 1px solid black;
+}
+
+<div id="foo"></div>
+<div id="bar"></div>
+
+A. Neither. Both foo and bar have the same width. They are both 100px.
+B.
+Neither. Both foo and bar have the same width. As <div> elements, they are both as wide as the <body>. 
+C. foo is wider than bar
+D.
+bar is wider than foo   (correct)
+E. Neither. Both foo and bar are invisible.
+--------------------------
