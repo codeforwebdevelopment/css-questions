@@ -49,3 +49,20 @@ D.
 bar is wider than foo   (correct)
 E. Neither. Both foo and bar are invisible.
 --------------------------
+
+<span>Well, hello</span>
+
+span {
+margin: 10px Opx 10px 0;
+padding: 10px;
+font-size: 28px;
+line-height: 36px;
+}
+
+Which CSS rule does not have any visual effect on the element?
+Select the best option:
+A. margin: 10px Opx 10px 0;  (correct)
+B. padding: 10px;
+C. font-size: 28px;
+D line-height: 36px;
+E. All of the CSS rules have a visual effect
