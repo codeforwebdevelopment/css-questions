@@ -91,7 +91,7 @@ What are the different CSS preprocessor
   
  Make three columns for each row
  Add backround color red for even item and green for odd item
-  
+```  
   <div class="align-blocks">
     <div class="item">One</div>
     <div class="item">Two</div>
@@ -105,18 +105,19 @@ What are the different CSS preprocessor
     <div class="item">Eight</div>
     <div class="item">Nine</div>
   </div>
-</body>
-</html>
+
 
   .align-blocks :nth-child(even) {
  background-color:red;
  }  
+  
  -------------------using grid
   .align-blocks{
   display:grid;
 
      grid-template-columns: auto auto auto;
 } 
+  
 --------------------using flex
  .align-blocks {
    display: flex;
@@ -128,3 +129,5 @@ What are the different CSS preprocessor
   flex: 1 0 calc(33.333% - 20px); /* explanation below */
   
 }
+  
+  ```
