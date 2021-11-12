@@ -86,3 +86,45 @@ Difference between display: none; visibility: hidden; opacity: 0;
 Create a Modal
 What do you know about sprites
 What are the different CSS preprocessor
+  
+  -------------------------
+  
+ Make three columns for each row
+ Add backround color red for even item and green for odd item
+  
+  <div class="align-blocks">
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three</div>
+    
+    <div class="item">Four</div>
+    <div class="item">Five</div>
+    <div class="item">Six</div>
+    
+    <div class="item">Seven</div>
+    <div class="item">Eight</div>
+    <div class="item">Nine</div>
+  </div>
+</body>
+</html>
+
+  .align-blocks :nth-child(even) {
+ background-color:red;
+ }  
+ -------------------using grid
+  .align-blocks{
+  display:grid;
+
+     grid-template-columns: auto auto auto;
+} 
+--------------------using flex
+ .align-blocks {
+   display: flex;
+  flex-wrap: wrap;
+   
+} 
+
+.item {
+  flex: 1 0 calc(33.333% - 20px); /* explanation below */
+  
+}
