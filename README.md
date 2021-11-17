@@ -131,3 +131,16 @@ What are the different CSS preprocessor
 }
   
   ```
+  ```
+pass dynamic values in mixin
+@mixin .btn {
+color:red;
+width:100px;
+height:100px;
+font-size:10px;
+}
+
+.btn2{
+@include .btn(ar1, ar2, ar3)
+}
+```
