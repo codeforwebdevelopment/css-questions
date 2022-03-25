@@ -16,15 +16,11 @@
 
 Using modern CSS selector syntax, how would you select only the <li> element with the "A" in it?
 Select the best option:
-A.
-#mylist li ul li
-B.
-#mylist > li > ul > li
+A. #mylist li ul li
+B. #mylist > li > ul > li
 C. #mylist > li ul li
-D.
-It is impossible to do with CSS selector syntax
-E.
-It is possible to do with CSS selector syntax, but none of the choices above are correct.
+D. It is impossible to do with CSS selector syntax
+E. It is possible to do with CSS selector syntax, but none of the choices above are correct.
 
 --------------------------------------------
 #foo {
