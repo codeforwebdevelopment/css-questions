@@ -30,6 +30,12 @@ Explain position properties and its difference
 Difference between div and span
 What is box model
 Difference between display: none; visibility: hidden; opacity: 0;
-Create a Modal
+
 What do you know about sprites
+a two-dimensional (2D) graphical object used in computer graphics, particularly in video games.
+
 What are the different CSS preprocessor
+Sass
+LESS
+Stylus
+PostCSS
