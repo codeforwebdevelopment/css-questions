@@ -1,0 +1,382 @@
+.div2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    filter: blur(8px);
+    /* defines visual effects to an element (often <img>) */
+}
+
+div.a {
+    width: 150px;
+    height: 80px;
+    background-color: yellow;
+    transform: rotate(20deg);
+}
+
+.width {
+    width: 50%;
+    background: #eee;
+}
+
+.minwidth {
+    width: 40%;
+    min-width: 700px;
+    background: green;
+}
+
+.maxwidth {
+    width: 25%;
+    max-width: 300px;
+    background: red;
+}
+
+/* Content with border and padding */
+.content {
+    border: 1px solid #c00;
+    padding: 5px;
+}
+
+
+.div-box {
+    /* order of this property values must be  horizontal offset /vertical offset/ blur radius/ optional spread radius/ color;
+     
+    box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+    */
+    box-shadow: 0px 1px 1px 0px #000;
+    border: 1px solid #c00;
+    padding: 50px 15px;
+    width: 50%;
+    background: #eee;
+}
+
+.text-update {
+    text-shadow: 3px 3px 4px #444;
+}
+
+.div-vertical {
+    vertical-align: bottom;
+}
+
+.grid2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo {
+    width: 80%;
+    margin: auto;
+}
+
+.img {
+    object-fit: cover;
+    width: 320px;
+    height: 180px;
+    background: red;
+    margin: 2px;
+
+    &:nth-child(even) {
+        object-fit: contain;
+    }
+
+}
+
+.div-line {
+    line-height: 2.6;
+}
+
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+
+    /*   position: static, relative, absolute, Sticky and fixed. */
+}
+
+/* div.relative {
+      position: relative;
+      width: 400px; 
+      height: 200px;
+      border: 3px solid #73AD21;
+    }   */
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+
+.div-visible {
+    visibility: visible;
+    /*   visible|hidden|collapse|initial|inherit; */
+}
+
+.div-wrap {
+    word-wrap: break-word;
+    width: 100px;
+}
+
+.div-count {
+    column-count: 3;
+    /* Divide the element into columns.  column-count : number|auto|initial|inherit. */
+    column-gap: 10px;
+    /* you can alse set the gap between the blocks*/
+
+    column-rule-style: solid;
+    column-rule-width: 10px;
+    column-rule-color: #ff00ff;
+    /* shorthand of above 3 properties-> column-rule: 4px double #ff00ff;   width, style, and color*/
+}
+
+.div-span {
+    column-span: all
+}
+
+.div-list {
+    list-style: square inside;
+}
+
+.div-counter {
+    /* Set "my-counter" to 0 */
+    counter-reset: my-counter;
+}
+
+h2::before {
+    /* Increment "my-counter" by 1 */
+    counter-increment: my-counter;
+    content: "Section "counter(my-counter) ". ";
+}
+
+.div-outline {
+    border: 2px solid black;
+    outline: thick ridge pink;
+    outline-offset: 15px;
+    /* adds space between an outline and the edge/border of an element. The space between an element and its outline is transparent.*/
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.div-text-transform {
+    text-transform: uppercase;
+    /*  text-transform: none|capitalize|uppercase|lowercase|initial|inherit; */
+}
+
+.div-text-space {
+    letter-spacing: 2px;
+
+}
+
+.div-text-overflow {
+    text-overflow: ellipsis;
+    width: 50px;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+
+.div-text-wrap {
+    white-space: pre;
+}
+
+#div1 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+
+    /*   transform-origin: x-axis y-axis z-axis|initial|inherit; */
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    transform: rotate(45deg);
+    transform-origin: 20% 40%;
+}
+
+.div-repeat {
+    background-image: url("https://homepages.cae.wisc.edu/~ece533/images/baboon.png");
+    background-repeat: repeat-x;
+}
+
+.flexbox {
+
+    display: flex;
+
+}
+
+.red {
+
+    background: red;
+
+    flex: 0 0 50px;
+
+}
+
+.green {
+
+    background: green;
+
+    flex: 1;
+
+}
+
+.blue {
+
+    background: blue;
+
+    flex: 1;
+
+}
+
+
+span.a {
+    display: inline;
+    /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+
+    /* display:block, inline-block, inline, none, table. */
+}
+
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+.one {
+    color: white;
+    background-color: brown;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.two {
+    color: white;
+    background-color: black;
+    margin: 10px;
+    width: 150px;
+    height: 70px;
+    display: inline-block;
+}
+
+.div-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+
+    /* or display:block
+    margin:0 auto */
+
+}
+
+#box {
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+    text-align: center;
+
+    /* width:auto; */
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+.table1 {
+    border-collapse: separate;
+    border: 1px solid black;
+    border-spacing: 15px;
+    /* border-collapse: collapse; */
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.div1 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div2 {
+    border: 1px solid red;
+}
+
+.div3 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div4 {
+    border: 1px solid red;
+    clear: left;
+}
+
+.div-color {
+    color: red;
+}
+
+.div-background {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+.div-background-prop {
+
+    background: rgba(0, 128, 0, 0.1);
+    width: 50px;
+    height: 50px;
+}
+
+.div-anchor {
+
+    cursor: pointer;
+}
