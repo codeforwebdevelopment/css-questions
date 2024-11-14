@@ -1,0 +1,38 @@
+div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+
+.img1 {
+    float: right;
+}
+
+.c {
+    overflow: auto;
+}
+
+or .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* .....//better way */
+.img2 {
+    float: right;
+}
+
+/* //pseudo element */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.floated {
+    float: left;
+}
+
+p.clear {
+    clear: both;
+}
