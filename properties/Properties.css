@@ -1,0 +1,158 @@
+/* inches (1in = 96px = 2.54cm)
+
+picas (1pc = 12 pt) */
+
+body { font-size:62.5%; }
+
+h1 { font-size: 2.4em; } /* =24px */
+
+p  { font-size: 1.4em; } /* =14px */
+
+li { font-size: 1.4em; } /* =14px? */
+
+/* Basis for rem function; increase/decrease to change sizes globally */
+html { font-size: 100%; }
+
+/* Function */
+@function rem($pixels) {
+
+    @return #{$pixels / 16px}rem;
+
+}
+
+/* Example usage */
+.class { font-size: rem(18px); }
+/* Exactly. In Sass, you declare things like this. */
+div {
+
+    background: green;
+  
+    p {
+  
+        background: red;
+  
+        &:hover {
+  
+            background: blue;
+  
+        }
+  
+        &:active {
+  
+           background: blue;
+  
+        }
+  
+    }  
+  
+  }
+  
+  ...which when converted to CSS would become this:
+  
+  div {
+  
+    background: green;
+  
+  }
+  
+  div p {
+  
+    background: red;
+  
+  }
+  
+  div p:hover {
+  
+    background: blue;
+  
+  }
+  
+  div p:active {
+  
+    blue;
+  
+  }
+
+
+
+  div {
+
+     z-index: 1;
+    
+    }
+    
+    div {
+    
+     z-index: 2; /* integer */
+    
+    }
+
+    p::before {
+
+        content: "Read this: ";
+      
+      }
+      
+      The:: before selector inserts info before the content of each selected element(s).
+      
+      h2:after {
+      
+      content: ' \00A7';
+      
+      }
+
+      .bigfirst:first-letter {
+
+         font-size:400%;
+        
+         float :left;
+        
+        }
+        
+        <p>
+        
+          Start editing to see some magic happen :)
+        
+        </p>
+        
+        a:link { color:blue; }
+        
+        a:visited { color:lightblue; }
+        
+        a:hover {
+        
+         color :white;
+        
+         background:red;
+        
+        }
+        
+        a:active { color:darkblue; }
+        
+        *:focus { border:2px dotted #888888; }
+
+        .div1 {
+
+            width: 300px;
+          
+            height: 100px;
+          
+          padding: 50px;
+          
+            border: 1px solid blue;
+          
+            box-sizing: border-box; //  to use the total width and height of an object in‐
+          
+          cluding padding and borders
+          
+          }
+          
+          box-sizing:content-box;
+          
+          word-spacing:
+          
+          word-spacing: 26px;
+
+
+
+

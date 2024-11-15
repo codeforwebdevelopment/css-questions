@@ -1,0 +1,16 @@
+<button type=”button”>test1</button>
+<button type=”button”>test1</button>
+<button type=”button” tabindex=”-1" id=”btn”>test1</button>
+<button type=”button”>test1</button>
+
+n the above example button with id btn will not be focused because it’s tabindex is -1.
+
+<a href=”#” tabindex=”1">tes1</a>
+<a href=”#” tabindex=”2">test2</a>
+<a href=”#” tabindex=”3">test3</a>
+
+If you reorder the tabindex then when you press the tab focus will be changed.
+
+<a href=”#” tabindex=”1">tes1</a>
+<a href=”#” tabindex=”3">test2</a>
+<a href=”#” tabindex=”2">test3</a>
