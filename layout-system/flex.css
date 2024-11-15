@@ -1,0 +1,33 @@
+.wrapper {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    min-width: 16px;
+    /* pixel unit */
+
+    padding: 35px 50px;
+    /* pixel unit */
+
+    border-radius: 50%;
+
+    font-size: 75px;
+
+    text-align: center;
+
+    background: #1779ba;
+
+    color: #fefefe;
+
+}

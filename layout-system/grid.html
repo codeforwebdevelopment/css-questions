@@ -1,0 +1,71 @@
+
+<div class="container">
+
+    <div class="scroll">
+
+        <div class="grid">
+
+            <div class="card" *ngFor="let x of [1,2,3,4,5,6]">
+
+                <div class="card-header">
+
+                    <div class="divimg"></div>
+
+                    <div class="recipedesc">
+
+                        <p>
+
+                            <span>Recipe : </span>Recipe 1</p>
+
+                        <p>
+
+                            <span>Decription : </span>This recipe is used
+                            to...</p>
+
+                        <p>
+
+                            <span>Category : </span>Starter</p>
+
+                    </div>
+
+                    <div class="btngrp">
+
+                        <a href="#">Meals:01</a>
+
+                    </div>
+
+                </div>
+
+                <table border="1" style="width:100%">
+
+                    <tr *ngFor="let a of [1,2,3,4]">
+
+                        <td>Portion</td>
+
+                        <td></td>
+
+                        <td>Sell</td>
+
+                        <td></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="totprofit" colspan="4">Total Profit :
+
+                            <span>$4.00</span>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
