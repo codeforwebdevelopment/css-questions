@@ -31,3 +31,17 @@
     color: #fefefe;
 
 }
+
+.navbar {
+    display: flex; /* Makes the container a flexbox */
+    justify-content: space-between; /* Spreads the items evenly */
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  

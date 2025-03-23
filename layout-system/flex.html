@@ -1,5 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox vs CSS Grid</title>
+  <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+  <section class="comparison">
+    <h1>Key Differences and When to Use Each</h1>
+
+    <div class="flexbox-section">
+      <h2>Use Flexbox when:</h2>
+      <ul>
+        <li>You need to align items in one direction (either row or column).</li>
+        <li>You need flexibility in distributing space among items.</li>
+        <li>You want to create complex layouts with flexible widths and alignments.</li>
+      </ul>
+      <p><strong>Example use case:</strong> Creating horizontal or vertical navigation bars, centering content, or creating small component-based layouts.</p>
+    </div>
+
+    <div class="grid-section">
+      <h2>Use CSS Grid when:</h2>
+      <ul>
+        <li>You are designing two-dimensional layouts that involve both rows and columns.</li>
+        <li>You need more control over the entire layout structure, including precise placement of items.</li>
+        <li>You need to define the grid structure and how the content spans multiple rows/columns.</li>
+      </ul>
+      <p><strong>Example use case:</strong> Building complex page layouts, like dashboards, photo galleries, or responsive websites.</p>
+    </div>
+
+    <div class="conclusion">
+      <h2>Conclusion:</h2>
+      <p><strong>Flexbox</strong> is great for linear layouts and distributing items along one axis (either row or column). It’s often used for simpler layouts like navigation bars, horizontal or vertical alignment, and component-based designs.</p>
+      <p><strong>CSS Grid</strong> is ideal for complex, two-dimensional layouts where you need to control both rows and columns simultaneously. It's perfect for building entire page layouts, like grids of items, dashboard structures, or responsive web pages with more intricate designs.</p>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
 <div class="wrapper">
 
     <span class="badge">1</span>
 
 </div>
+<p>Flexbox Example: Building a Horizontal Navigation Bar</p>
+<p>Let’s imagine you're building a simple navigation bar with links. Flexbox is great for this because you're arranging items in a single direction (horizontally or vertically)</p>
+<nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  
+  
